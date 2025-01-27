@@ -4,7 +4,7 @@ namespace FirstGame;
 
 public partial class Slime : Node2D
 {
-	private const double speed = 130.0f;
+	private const double speed = 60.0f;
 	private int _direction = 1;
 	private RayCast2D _rayCastRight;
 	private RayCast2D _rayCastLeft;
@@ -21,13 +21,13 @@ public partial class Slime : Node2D
 	{
 		if (_rayCastRight.IsColliding())
 		{
-			_direction = -1;
+			_direction = 1;
 			_animatedSprite.FlipH = true;
 		}
 
 		if (_rayCastLeft.IsColliding())
 		{
-			_direction = 1;
+			_direction = -1;
 			_animatedSprite.FlipH = false;
 		}
 		

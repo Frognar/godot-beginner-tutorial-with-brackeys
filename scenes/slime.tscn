@@ -49,6 +49,7 @@ script = ExtResource("1_e5non")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_vjfje")
+autoplay = "default"
 frame_progress = 0.197874
 
 [node name="Killzone" parent="." instance=ExtResource("2_8m0mm")]
@@ -60,8 +61,8 @@ shape = SubResource("RectangleShape2D_kkd75")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(0, -6)
-target_position = Vector2(9, 0)
+target_position = Vector2(10, 0)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
 position = Vector2(0, -6)
-target_position = Vector2(-9, 0)
+target_position = Vector2(-10, 0)
