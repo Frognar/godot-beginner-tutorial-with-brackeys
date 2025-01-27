@@ -36,6 +36,19 @@ public partial class Player : CharacterBody2D
 		{
 			_animatedSprite.FlipH = true;
 		}
+
+		if (!IsOnFloor())
+		{
+			_animatedSprite.Play("jump");
+		}
+		else if (direction == 0)
+		{
+			_animatedSprite.Play("idle");
+		}
+		else
+		{
+			_animatedSprite.Play("run");
+		}
 		
 		if (direction != 0f)
 		{
