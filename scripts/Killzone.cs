@@ -1,6 +1,6 @@
 using Godot;
 
-namespace FirstGame.scenes;
+namespace FirstGame;
 
 public partial class Killzone : Area2D
 {
